@@ -1,40 +1,38 @@
 ---
 title: "Blog Post Two"
-publishedAt: "September 16, 2021"
+publishedAt: "April 29, 2022"
 description: "A sample post with all the included functionality."
 ---
 
-> This is a sample post adapted from one of my [blog posts](https://achintyajha.com/posts/idle-custom-themes/). It includes all markdown functionality along with a JSX component (next/image) and does code highlighting out of the box.
+> This is a sample post. It includes all markdown functionality along with a JSX component (next/image) and does code highlighting out of the box.
 
 <p align="center">
   <Image
-    alt="Dracula Theme Preview"
+    alt="DevKanisk logo"
     src="/static/dk-logo.png"
     width={500}
     height={428}
   />
 </p>
 
-## Step 1: Find your ~/.idlerc file
+## Heading 2: A test
 
-Based on what I found on _StackOverflow_, it's pretty easy to find it on your home directory. Finding it on Mac is a bit different(That's what I will talk about next).
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lorem sed risus ultricies. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Viverra justo nec ultrices dui sapien eget mi. Eu tincidunt tortor aliquam nulla facilisi. Tincidunt ornare massa eget egestas purus viverra accumsan in. Sed augue lacus viverra vitae congue eu consequat ac. Aliquam ultrices sagittis orci a scelerisque purus. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Tincidunt eget nullam non nisi. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Lacus vel facilisis volutpat est velit egestas dui id. Enim nulla aliquet porttitor lacus.
 
-Open the terminal in your root directory then type-
+Nunc non blandit massa enim. Tortor condimentum lacinia quis vel eros donec ac. Lorem donec massa sapien faucibus et molestie ac. Vulputate ut pharetra sit amet. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Quis hendrerit dolor magna eget. In mollis nunc sed id semper risus in. Ullamcorper morbi tincidunt ornare massa. Sodales ut etiam sit amet nisl purus in. Augue mauris augue neque gravida in fermentum. Ac turpis egestas sed tempus urna et. Posuere ac ut consequat semper viverra nam libero. A diam maecenas sed enim ut sem viverra aliquet eget. Tellus in hac habitasse platea.
 
-```shell
-    $ cd ~/.idlerc
-    $ touch config-highlight.cfg
-    $ open .
+```python
+def foo():
+    return "bar"
 ```
 
-## Step 2: Edit the _config-highlight.cfg_ file
+### Heading 3
 
-This will open the ~/.idlerc folder with the custom theme config file. Now open this file from finder or use
+Sample text:
+
+- bullet 1
+- bullet 2
 
 ```bash
-    $ open -a TextEdit config-highlight.cfg
+$ open -a TextEdit config-highlight.cfg
 ```
-
-## Step 3: Update the theme on IDLE
-
-Now paste the theme code snippet into this file and save it. It's simpler from here on. Open IDLE Preferences, go to highlights, and choose the custom theme. Dead simple right?
