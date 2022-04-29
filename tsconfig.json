@@ -3,6 +3,7 @@
     "allowJs": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -22,6 +23,11 @@
     "incremental": true,
     "target": "es2018"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".contentlayer/generated"
+  ],
   "exclude": ["node_modules"]
 }
