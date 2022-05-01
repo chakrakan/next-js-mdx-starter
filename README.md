@@ -5,7 +5,7 @@ This is a NextJS boilerplate to get started quickly with some interesting and us
 ## Getting Started
 
 ```bash
-yarn create-next-app --example https://github.com/chakrakan/next-js-mdx-starter <APP_NAME>
+npx create-next-app --example https://github.com/chakrakan/next-js-mdx-starter <APP_NAME>
 ```
 
 ```bash
