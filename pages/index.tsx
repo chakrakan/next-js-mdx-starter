@@ -1,4 +1,4 @@
-import SeoContainer from "components/SeoContainer";
+import { SeoContainer } from "components";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {

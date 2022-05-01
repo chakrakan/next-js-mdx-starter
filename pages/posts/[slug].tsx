@@ -1,15 +1,10 @@
-import { allPosts, Post } from "../../.contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
-import SeoContainer from "components/SeoContainer";
-import Image from "next/image";
+import { allPosts, Post as PostType } from "../../.contentlayer/generated";
 import type { GetStaticProps, GetStaticPaths } from "next/types";
+import { useMDXComponent } from "next-contentlayer/hooks";
+import { BlogPost, MDXComponents } from "components";
 
 type PostProps = {
-  post: Post;
-};
-
-const MDXcomponents = {
-  Image,
+  post: PostType;
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -29,26 +24,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const PostLayout = ({ post }: PostProps) => {
-  const MDXComponent = useMDXComponent(post.body.code);
+  const Component = useMDXComponent(post.body.code);
   return (
-    <SeoContainer
-      title={post.title}
-      description={post.description}
-      url={`devkanisk.com/posts/${post.slug}`}
-      publishedAt={post.publishedAt}
-    >
-      <article>
-        <div>
-          <h1>{post.title}</h1>
-          <p>
-            <span>{post.publishedAt}</span>
-          </p>
-        </div>
-        <div className="entry">
-          <MDXComponent components={MDXcomponents} />
-        </div>
-      </article>
-    </SeoContainer>
+    <BlogPost post={post}>
+      <Component components={MDXComponents} />
+    </BlogPost>
   );
 };
 
