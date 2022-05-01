@@ -7,7 +7,7 @@ type SeoContainerProps = PropsWithChildren<{
   title: string;
   description: string;
   url: string;
-  publishedAt: string;
+  publishedAt?: string;
 }>;
 
 export default function SeoContainer({

@@ -1,10 +1,17 @@
 import Link from "next/link";
 import { allPosts, Post } from "../.contentlayer/generated/";
 import "prismjs/themes/prism-tomorrow.css";
+import SeoContainer from "components/SeoContainer";
 
 export default function Posts({ posts }: { posts: Post[] }) {
   return (
-    <>
+    <SeoContainer
+      title={"NextJS Contentlayer Starter"}
+      description={
+        "A starter template for NextJS leveraging Contentlayer + MDX to get you started fast!"
+      }
+      url={"next-js-mdx-starter.vercel.app"}
+    >
       <div>
         <h1>Posts</h1>
         {posts.map(({ title, description, slug }) => (
@@ -36,7 +43,7 @@ export default function Posts({ posts }: { posts: Post[] }) {
           </Link>
         ))}
       </div>
-    </>
+    </SeoContainer>
   );
 }
 

@@ -1,8 +1,15 @@
+import SeoContainer from "components/SeoContainer";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <SeoContainer
+      title={"NextJS Contentlayer Starter"}
+      description={
+        "A starter template for NextJS leveraging Contentlayer + MDX to get you started fast!"
+      }
+      url={"next-js-mdx-starter.vercel.app"}
+    >
       <p>Hello, welcome to my MDX blog!</p>
       <p>
         If you liked this starter, go ahead and leave a star on the{" "}
@@ -15,7 +22,7 @@ const Home: NextPage = () => {
         </a>
         !
       </p>
-    </div>
+    </SeoContainer>
   );
 };
 
