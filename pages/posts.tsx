@@ -23,7 +23,10 @@ export default function Posts({ posts }: { posts: Post[] }) {
                     dark:hover:shadow-none"
             >
               <p className="m-0">
-                <a className="text-blue-700 hover:text-blue-900">
+                <a
+                  className="text-blue-700 hover:text-blue-900"
+                  aria-label={title}
+                >
                   <b>{title}</b>
                 </a>
                 <br />
