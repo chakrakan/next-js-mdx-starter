@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "5.31.0",
     "autoprefixer": "10.4.8",
     "contentlayer": "0.2.4",
-    "eslint": "8.20.0",
+    "eslint": "8.21.0",
     "eslint-config-google": "0.14.0",
     "eslint-config-next": "12.2.3",
     "eslint-config-prettier": "8.5.0",
