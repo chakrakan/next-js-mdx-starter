@@ -2119,10 +2119,10 @@ html-void-elements@^2.0.0:
   resolved "https://registry.npmjs.org/html-void-elements/-/html-void-elements-2.0.1.tgz"
   integrity sha512-0quDb7s97CfemeJAnW9wC0hw78MtW7NU3hqtCD75g2vFlDLt36llsYD7uB7SUzojLMP24N5IatXf7ylGXiGG9A==
 
-husky@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.npmjs.org/husky/-/husky-8.0.1.tgz"
-  integrity sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==
+husky@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.npmjs.org/husky/-/husky-8.0.3.tgz"
+  integrity sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==
 
 ignore@^5.2.0:
   version "5.2.0"
